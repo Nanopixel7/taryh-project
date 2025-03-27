@@ -1,0 +1,210 @@
+.main {
+  width: 100%;
+  min-height: 90vh;
+  padding: 20px 20px;
+  background-color: var(--bg-color);
+}
+.main > .introduction {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.main > .introduction > h1 {
+  font-size: 3rem;
+  color: var(--orange);
+}
+.main > .introduction > p {
+  font-size: 2rem;
+  font-weight: 900;
+  color: burlywood;
+}
+
+.main > .first-row {
+  display: flex;
+  flex-direction: column;
+}
+.main > .first-row > .playground {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  background-color: var(--orange);
+  border: solid var(--orange) 2px;
+  padding: 8px;
+  display: grid;
+  grid-template-areas:
+    "a1  b1  c1  d1  e1  f1  j1  h1  i1  g1  k1  l1  m1  n1  o1  p1"
+    "a2  b2  c2  d2  e2  f2  j2  h2  i2  g2  k2  l2  m2  n2  o2  p2"
+    "a3  b3  c3  d3  e3  f3  j3  h3  i3  g3  k3  l3  m3  n3  o3  p3"
+    "a4  b4  c4  d4  e4  f4  j4  h4  i4  g4  k4  l4  m4  n4  o4  p4"
+    "a5  b5  c5  d5  e5  f5  j5  h5  i5  g5  k5  l5  m5  n5  o5  p5"
+    "a6  b6  c6  d6  e6  f6  j6  h6  i6  g6  k6  l6  m6  n6  o6  p6"
+    "a7  b7  c7  d7  e7  f7  j7  h7  i7  g7  k7  l7  m7  n7  o7  p7"
+    "a8  b8  c8  d8  e8  f8  j8  h8  i8  g8  k8  l8  m8  n8  o8  p8"
+    "a9  b9  c9  d9  e9  f9  j9  h9  i9  g9  k9  l9  m9  n9  o9  p9"
+    "a10 b10 c10 d10 e10 f10 j10 h10 i10 g10 k10 l10 m10 n10 o10 p10"
+    "a11 b11 c11 d11 e11 f11 j11 h11 i11 g11 k11 l11 m11 n11 o11 p11"
+    "a12 b12 c12 d12 e12 f12 j12 h12 i12 g12 k12 l12 m12 n12 o12 p12"
+    "a13 b13 c13 d13 e13 f13 j13 h13 i13 g13 k13 l13 m13 n13 o13 p13"
+    "a14 b14 c14 d14 e14 f14 j14 h14 i14 g14 k14 l14 m14 n14 o14 p14"
+    "a15 b15 c15 d15 e15 f15 j15 h15 i15 g15 k15 l15 m15 n15 o15 p15"
+    "a16 b16 c16 d16 e16 f16 j16 h16 i16 g16 k16 l16 m16 n16 o16 p16";
+}
+.col {
+  border: 1px var(--orange) solid;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.col:hover {
+  background-color: burlywood;
+}
+
+.main > .first-row > .items {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.fade-in {
+  width: 0px;
+  height: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px 10px var(--bg-color);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fade-out {
+  width: 0px;
+  height: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px 10px var(--bg-color);
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.outer-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.outer-image > .images {
+  display: flex;
+  flex-direction: row;
+  height: 140px;
+  padding-left: 15px;
+}
+.outer-image > .images > .img {
+  margin: 2px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 90px;
+  height: max-content;
+  display: inline-block;
+  overflow: auto;
+  transition: 0.2s all;
+}
+.outer-image > .images > .img::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.outer-image > .images > .img:hover {
+  box-shadow: 0 0 10px 5px var(--shadow-black);
+}
+.second-row {
+  display: none;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 60vh;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--orange);
+}
+.second-row > h1 {
+  padding: 10px;
+  font-size: 4rem;
+  text-shadow: 0 0 20px var(--orange);
+}
+.second-row > h2 {
+  padding: 22px;
+  font-size: 1rem;
+  text-shadow: 0 0 20px var(--orange);
+}
+.second-row > a {
+  margin: 50px;
+  border: none;
+}
+.second-row > a > button {
+  text-decoration: none;
+  color: burlywood;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 10px 5px;
+  border: solid 2px var(--orange);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.second-row > a > button:hover {
+  border: solid 2px var(--bg-color);
+  color: var(--bg-color);
+  background-color: burlywood;
+}
+.counter {
+  padding: 0 10px;
+  color: var(--orange);
+  font-weight: 900;
+  text-align: end;
+  font-size: 1.5rem;
+}
+.foundElements {
+  width: 100%;
+  padding: 20px 0;
+}
+.foundElements > .foundElement {
+  border: solid 3px var(--orange);
+  border-radius: 15px;
+  width: 100%;
+  aspect-ratio: 5/ 1;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+.foundElement > img {
+  width: 30%;
+  border-radius: 10px;
+}
+.foundElement > h1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange);
+}
+.main > h1 {
+  color: var(--orange);
+  font-size: 2.5rem;
+  text-align: center;
+}
