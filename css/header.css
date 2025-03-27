@@ -1,0 +1,87 @@
+:root {
+  --orange: rgb(255, 195, 83);
+  --white: rgb(255, 255, 255);
+  --light-orange: rgb(255, 228, 196);
+  --bg-color: rgb(252, 242, 230);
+  --shadow-black: rgba(0, 0, 0, 0.5);
+}
+html {
+  font-size: 2.3256vw;
+  transition: all 0.2s;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: burlywood;
+}
+.container {
+  width: 100%;
+  background-color: var(--bg-color);
+  position: relative;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: burlywood;
+  box-shadow: 0 0 15px 5px grey;
+  top: 0px;
+  z-index: 30;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: sticky;
+  max-width: 1200px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header > h1 {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 2.18827766rem;
+  color: var(--light-orange);
+}
+header > .img {
+  width: 7rem;
+}
+@media screen and (min-width: 650px) {
+  html {
+    font-size: 1.3vw;
+  }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  .container {
+    max-width: 1200px;
+    position: relative;
+  }
+  header{
+      height: 50px;
+  }
+  header > h1 {
+    margin: 10px 0;
+    max-width: 1200px;
+    font-size: 2rem;
+    width: 100%;
+    /* font-size: 1rem; */
+  }
+  header > .img {
+    width: 3rem;
+  }
+}
