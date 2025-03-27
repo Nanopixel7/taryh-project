@@ -1,0 +1,107 @@
+.main {
+  width: 100%;
+  min-height: 70vh;
+  padding: 20px 20px;
+  background-color: var(--bg-color);
+}
+.main > .introduction {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.main > .introduction > h1 {
+  font-size: 3rem;
+  color: var(--orange);
+}
+.rows {
+  display: block;
+}
+.chapter {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 15px;
+  background-color: var(--light-orange);
+  padding: 10px;
+  height: max-content;
+}
+.chapter > p {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: burlywood;
+  text-align: center;
+}
+.chapter > button {
+  text-align: start;
+  margin: 0 10px;
+  color: rgba(0, 0, 0, 0.8);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.chapter > button:hover {
+  text-decoration: underline;
+  transform: scale(1.2) translateX(8.5%);
+}
+.darken {
+  top: -150%;
+  transform: scale(0.5);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  transition: all 0.7s ease-out;
+}
+.clicked {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 99;
+  background-color: var(--light-orange);
+  transition: all 0.5s;
+}
+.clicked > .header {
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: burlywood;
+  color: var(--light-orange);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 10vh;
+}
+.clicked > .header > h1 {
+  text-align: center;
+  width: 100%;
+}
+.clicked > .header > span {
+  color: black;
+  font-weight: 900;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.clicked > .header > span:hover {
+  opacity: 0.7;
+}
+.clicked > .context {
+  padding: 20px;
+  max-height: 80vh;
+  overflow: auto;
+}
+.clicked > .context > h2 {
+  text-align: center;
+}
+.clicked > .context > p {
+  font-size: 1.3rem;
+}

@@ -1,0 +1,24 @@
+@media screen and (min-width: 900px) {
+  .chapter > p {
+    font-size: 1.5rem;
+  }
+  .rows{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .firstRow{
+    margin-right: 10px;
+  }
+  .secondRow{
+    margin-left: 10px;
+  }
+  .chapter{
+      width: 100%;
+      margin: 10px 0;
+  }
+  .chapter>button{
+    font-size: 0.6rem;
+    margin: 0 20px;
+  }
+}
