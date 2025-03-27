@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Gadymy Türkmenistan" oýny</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/mapGame/mapGamePhone.css">
+    <link rel="stylesheet" href="./css/mapGame/mapGamePcTablet.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Türkmen milli oýunlarynyň taryhy we onuň döwrebaplaşdyrylmagy</h1>
+            <div class="img"><img src="./img/logo.png" alt="Magtmguly surat" width="100%" height="auto">
+            </div>
+        </header>
+        <div class="main">
+            <div class="introduction" id="introduction">
+                <h1>"Gadymy Türkmenistan"</h1>
+                <p>oýny</p>
+            </div>
+            <div class="first-row" id="firstRow">
+                <div class="map" id="mapArea">
+                    <img class="main" id="mainImage" src="./img/Turkmenistan_1994_CIA_map.jpg"
+                        alt="Türkmenistanyň kartasy" width="100%">
+                    <!-- Floats -->
+                    <img id="balkan" onclick="checkIfCorrect('balkan')" class="welayat balkan"
+                        src="./img/map/balkan.png" alt="balkan">
+                    <img id="dashoguz" onclick="checkIfCorrect('dashoguz')" class="welayat dashoguz"
+                        src="./img/map/dashoguz.png" alt="dashoguz">
+                    <img id="lebap" onclick="checkIfCorrect('lebap')" class="welayat lebap" src="./img/map/lebap.png"
+                        alt="lebap">
+                    <img id="mary" onclick="checkIfCorrect('mary')" class="welayat mary" src="./img/map/mary.png"
+                        alt="mary">
+                    <img id="ahal" onclick="checkIfCorrect('ahal')" class="welayat ahal" src="./img/map/ahal.png"
+                        alt="ahal">
+                    <div class="wrongAlertOuter" id="wrongAlert">
+                        <div class="wrongAlert">
+                            <p>Ýalňyş</p><button onclick="removewrongAlert()">Ok</button>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="items" id="itemsImages">
+                    <div class="fade-in"></div>
+                    <div class="nameOfCurrent" id="nameOfCurrent"></div>
+                    <div class="outer-image">
+                        <div class="images" id="imagesToChooseFrom">
+
+                        </div>
+                    </div>
+                    <div class="fade-out"></div>
+                </div>
+            </div>
+            <div class="counter" id="counter">0/17</div>
+            <div class="hidden-row" id="hiddenRow">
+                <h1>Tüweleme!</h1>
+                <h2>Siz "Gadymy Türkmenistan" atly oýnymyzy üstünlikli çözdüňiz!</h2>
+                <a href="./index.html"><button>Esasy sahypa dolan</button></a>
+            </div>
+            <div class="second-row">
+                <!--? 1. Mary -->
+                <!--? 2. Ahal -->
+                <!--? 3. Balkan -->
+                <!--? 4. Dashoguz -->
+                <!--? 5. Lebap -->
+                <div class="maryRow rows">
+                    <div class="mini-map"><img src="./img/mini-map/mary.png" alt="mary" width="100%"></div>
+                    <div class="text-area maryText">
+                        <div class="heading">
+                            <h1>Mary</h1>
+                        </div>
+                        <p class="found-elemet-place mary's-place" id="foundElementPlacemary"></p>
+                    </div>
+                </div>
+                <div class="ahalRow rows">
+                    <div class="mini-map"><img src="./img/mini-map/ahal.png" alt="ahal" width="100%"></div>
+                    <div class="text-area ahalText">
+                        <div class="heading">
+                            <h1>Ahal</h1>
+                        </div>
+                        <p class="found-elemet-place ahal's-place" id="foundElementPlaceahal"></p>
+                    </div>
+                </div>
+                <div class="balkanRow rows">
+                    <div class="mini-map"><img src="./img/mini-map/balkan.png" alt="balkan" width="100%"></div>
+                    <div class="text-area balkanText">
+                        <div class="heading">
+                            <h1>Balkan</h1>
+                        </div>
+                        <p class="found-elemet-place balkan's-place" id="foundElementPlacebalkan"></p>
+                    </div>
+                </div>
+                <div class="dashoguzRow rows">
+                    <div class="mini-map"><img src="./img/mini-map/dashoguz.png" alt="dashoguz" width="100%"></div>
+                    <div class="text-area dashoguzText">
+                        <div class="heading">
+                            <h1>Dashoguz</h1>
+                        </div>
+                        <p class="found-elemet-place dashoguz's-place" id="foundElementPlacedashoguz"></p>
+                    </div>
+                </div>
+                <div class="lebapRow rows">
+                    <div class="mini-map"><img src="./img/mini-map/lebap.png" alt="lebap" width="100%"></div>
+                    <div class="text-area lebapText">
+                        <div class="heading">
+                            <h1>Lebap</h1>
+                        </div>
+                        <p class="found-elemet-place lebap's-place" id="foundElementPlacelebap"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="introduction">
+                <p>Taýýarlan okuwçy: Annaguly Toýlyýew</p>
+                <p>Mugallymy: &nbsp;Täzegül&nbsp;Baýramgeldiýewa</p>
+            </div>
+            <hr>
+            <p>Sakarçäge etrabynyň 14-nji orta mekdebi</p>
+        </footer>
+    </div>
+    <script src="./js/mapGame.js"></script>
+</body>
+
+</html>
