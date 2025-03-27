@@ -1,0 +1,51 @@
+@media screen and (min-width: 650px) {
+      .main > .heading{
+        padding-bottom: 0;
+      }
+      .main > .section{
+        height: 25rem;
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+      }
+      .main > .section > .img {
+        width: 60%;
+        height: 100%;
+      }
+      .main > .section > .about{
+        width: 40%;
+        height: 100%;
+      }
+      .main > .section > .about > .text{
+        height: 100%;
+      }
+      .main > .section > .about > .text > h1{
+        font-size: 2rem;
+      }
+      .main > .section > .about > .text > .bottom-part {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 87%;
+        width: 100%;
+        padding: 0 20px;
+      }
+      .main > .section > .about > .text > .bottom-part > p{
+        width: 100%;
+        font-size: 1.7rem;
+        overflow: visible;
+      }
+      .main > .section > .about > .text > .bottom-part > a{
+        width: 100%;
+      }
+    footer {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 0 15px 5px grey;
+      height: max-content;
+    }
+    footer > p{
+        padding-bottom: 5px;
+    }
+}
+
